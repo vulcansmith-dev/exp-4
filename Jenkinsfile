@@ -37,7 +37,7 @@ pipeline {
 
         stage('Push Docker Image') {
             steps {
-                bat 'dockerDesktop push %DOCKER_IMAGE%:latest'
+                bat '"C:\\Users\\Admin\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" push %DOCKER_IMAGE%:latest'
             }
         }
     }
