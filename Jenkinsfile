@@ -28,7 +28,7 @@ pipeline {
         )]) {
             bat '''
                 @echo off
-                echo %DOCKER_PAT%| docker login -u %DOCKER_USER% --password-stdin
+                echo %DOCKER_PAT%| "C:\\Users\\Admin\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" login -u %DOCKER_USER% --password-stdin
                 if errorlevel 1 exit /b 1
             '''
         }
