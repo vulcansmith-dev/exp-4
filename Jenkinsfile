@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/vulcansmith-dev/exp-4.git'
+                    url: 'https://github.com/vulcansmith-dev/J-D-G.git'
             }
         }
 
